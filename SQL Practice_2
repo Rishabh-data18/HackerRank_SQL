@@ -1,1 +1,57 @@
+--Weather Observation Station 4
+--https://www.hackerrank.com/challenges/weather-observation-station-4/problem
 
+SELECT (COUNT(CITY) - COUNT (DISTINCT(CITY)))
+FROM STATION 
+
+
+--Weather Observation Station 5
+--https://www.hackerrank.com/challenges/weather-observation-station-5/problem
+
+SELECT TOP 1 CITY, LEN(CITY)
+FROM STATION
+ORDER BY LEN(CITY), CITY 
+
+SELECT TOP 1 CITY, LEN(CITY)
+FROM STATION
+ORDER BY LEN(CITY) DESC, CITY 
+
+
+--Weather Observation Station 6
+--https://www.hackerrank.com/challenges/weather-observation-station-6/problem
+
+SELECT DISTINCT(CITY)
+FROM STATION
+WHERE CITY LIKE '[aeiou]%'
+
+
+--Weather Observation Station 7
+--https://www.hackerrank.com/challenges/weather-observation-station-7/problem
+
+SELECT DISTINCT(CITY)
+FROM STATION
+WHERE CITY LIKE '%[aeiou]'
+
+
+--Weather Observation Station 8
+--https://www.hackerrank.com/challenges/weather-observation-station-8/problem
+
+SELECT DISTINCT(CITY)
+FROM STATION
+WHERE CITY LIKE '[aeiou]%[aeiou]'
+
+
+--Weather Observation Station 9
+--https://www.hackerrank.com/challenges/weather-observation-station-9/problem
+
+SELECT DISTINCT(CITY)
+FROM STATION
+WHERE CITY NOT LIKE '[aeiou]%'
+
+
+--Weather Observation Station 10
+--https://www.hackerrank.com/challenges/weather-observation-station-10/problem
+
+SELECT DISTINCT(CITY)
+FROM STATION
+WHERE CITY NOT LIKE '%[aeiou]'
